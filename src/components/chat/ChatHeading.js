@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FAVideo from 'react-icons/lib/fa/video-camera'
-import FAUserPlus from 'react-icons/lib/fa/user-plus'
-import MdEllipsisMenu from 'react-icons/lib/md/keyboard-control'
+import VideocamOutlinedIcon from '@material-ui/icons/VideocamOutlined';
+import PersonAddOutlinedIcon from '@material-ui/icons/PersonAddOutlined';
+import MoreHorizOutlinedIcon from '@material-ui/icons/MoreHorizOutlined';
 
 export default class ChatHeading extends Component {
 	render() {
@@ -17,9 +17,9 @@ export default class ChatHeading extends Component {
 					</div>
 				</div>
 				<div className="options">
-					<FAVideo />
-					<FAUserPlus />
-					<MdEllipsisMenu />
+					<VideocamOutlinedIcon />
+					<PersonAddOutlinedIcon />
+					<MoreHorizOutlinedIcon />
 				</div>
 			</div>
 		);

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import FAChevronDown from 'react-icons/lib/md/keyboard-arrow-down'
-import FAMenu from 'react-icons/lib/fa/list-ul'
-import FASearch from 'react-icons/lib/fa/search'
-import MdEject from 'react-icons/lib/md/eject'
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 export default class SideBar extends Component {
 	render() {
@@ -10,13 +10,13 @@ export default class SideBar extends Component {
 		return (
 			<div id="side-bar">
 					<div className="heading">
-						<div className="app-name">Zanjo Chat <FAChevronDown /></div>
+						<div className="app-name">Zanjo Chat <KeyboardArrowDownIcon /></div>
 						<div className="menu">
-							<FAMenu />
+							<MenuIcon />
 						</div>
 					</div>
 					<div className="search">
-						<i className="search-icon"><FASearch /></i>
+						<i className="search-icon"><SearchIcon /></i>
 						<input placeholder="Search" type="text"/>
 						<div className="plus"></div>
 					</div>
@@ -57,7 +57,7 @@ export default class SideBar extends Component {
 					<div className="current-user">
 						<span>{user.name}</span>
 						<div onClick={()=>{logout()}} title="Logout" className="logout">
-							<MdEject/>	
+							<KeyboardArrowUpIcon/>	
 						</div>
 					</div>
 				</div>
